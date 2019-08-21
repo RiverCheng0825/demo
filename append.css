@@ -1,3 +1,4 @@
-.app-header .logo {
-    width: 100px !important;
+.app-header {
+    background: red !important;
 }
+
