@@ -1,4 +1,7 @@
-.app-header {
-    background: red !important;
+.game-filter > .game-item {
+  color: #ffc30f !important;
 }
 
+.app-header {
+  background: red;
+}
