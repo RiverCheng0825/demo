@@ -1,15 +1,353 @@
-.game-filter > .game-item {
-  color: #ffc30f !important;
+.app-header .app-logo {
+  width: 136px;
+  background-image: url("");
+  /* display: none; */
+}
+
+:root {
+  --app-bkg: #000;
+  --app-text: #b3b3b3;
+  --app-header-bkg: #000;
+  --app-header-text: #b3b3b3;
+  --app-events-bkg: #121212;
+  --app-events-text: #65d46e;
+  --app-teb-bar: #65d46e;
+
+  --main-bkg: #0b0b0b;
+  --match-tab-bkg: #121212;
+
+  --match-tab-text: #b3b3b3;
+  --match-tab-count: #515151;
+  --match-tab-text-active: #fff;
+  --match-tab-count-active: #65d46e;
+
+  --match-card-bkg: #181818;
+  --match-card-hover: #262626;
+  --match-card-text: #b3b3b3;
+  --match-card-best-of: #515151;
+  --match-card-count-bkg: #202020;
+  --match-card-count-text: #505050;
+  --match-card-count-border: #202020;
+  --live-icon: #f22;
+  --live-icon-content: #f22;
+
+  --game-card-bkg: #101010;
+  --game-card-text: #b3b3b3;
+  --game-card-active: #1a1a1a;
+  --game-card-active-text: #fff;
+  --game-card-active-bar: #65d46e;
+
+  --odds-btn-bkg: #202020;
+  --odds-btn-text: #b3b3b3;
+  --odds-btn-border: #0c4721;
+  --odds-btn-bkg-active: #0c4721;
+  --odds-btn-border-active: #65d46e;
+  --odds-btn-text-active: #fff;
+  --odds-btn-border-disabled: #202020;
+
+  --bet-info-bkg: #101010;
+  --bet-info-tab-bkg: #262626;
+
+  --bet-info-tab-text: #b3b3b3;
+
+  --bet-slip-confirm-border: #0c4721;
+  --bet-slip-tip-text: #b3b3b3;
+
+  --slip-card-bkg: #181818;
+  --slip-card-text: #b3b3b3;
+  --slip-card-alert: #dc0000;
+  --slip-card-odds-text: #65d46e;
+
+  --slip-input-bkg: #111111;
+  --slip-input-caret: #65d46e;
+  --slip-input-recommend-bkg: #111111;
+
+  --base-button-bkg: #57b660;
+  --base-button-bkg-disabled: #181818;
+  --base-button-text-disabled: #515151;
+
+  --match-schedule-bkg: #121212;
+}
+
+.match-schedule .schedule-time,
+.home-page .match-date-group,
+.tournament-page .match-date-group {
+  background-color: var(--match-schedule-bkg);
+}
+
+.bet-slip-card .slip-card {
+  background-color: var(--slip-card-bkg);
+  border-color: var(--slip-card-bkg);
+  color: var(--slip-card-text);
+}
+
+.combo-card {
+  background-color: var(--slip-card-bkg);
+  color: var(--slip-card-text);
+}
+
+.bet-slip .bet-list .combo-list .combo-header {
+  background-color: var(--bet-info-tab-bkg);
+  color: var(--bet-info-tab-text);
+}
+
+.bet-slip .bet-confirm .combo-tip {
+  background-color: var(--slip-card-bkg);
+}
+
+.bet-slip .bet-confirm {
+  background-color: var(--bet-info-bkg);
+}
+
+.bet-slip .bet-confirm .odds-tip {
+  color: var(--bet-slip-tip-text);
+}
+
+.bet-slip .bet-confirm .tip-border {
+  background-color: var(--bet-slip-confirm-border);
+}
+
+.bet-slip-card .disable-combo {
+  border-color: var(--slip-card-alert);
+}
+
+.bet-slip-card .slip-card .card-header .odds {
+  color: var(--slip-card-odds-text);
+}
+
+.combo-card .combo-odds {
+  color: var(--slip-card-odds-text);
+}
+
+.bet-slip-input .bet-input {
+  background-color: var(--slip-input-bkg);
+}
+
+.bet-slip-input .bet-input input::placeholder {
+  color: var(--slip-card-text);
+}
+
+.bet-slip-input .bet-input input {
+  caret-color: var(--slip-input-caret);
+}
+
+.bet-slip-input .recommend-list .recommend-item {
+  background-color: var(--slip-card-bkg);
+}
+
+.bet-slip-input .recommend-list .recommend-item:hover {
+  background-color: var(--slip-input-bkg);
+}
+
+.base-button .base-button-contain {
+  box-shadow: none;
+  background-color: var(--base-button-bkg);
+  border: none;
+}
+
+.base-button .disabled {
+  background-color: var(--base-button-bkg-disabled);
+  color: var(--base-button-text-disabled);
+}
+
+
+html {
+  background-color: var(--app-bkg);
+  color: var(--app-text);
 }
 
 .app-header {
-  background: red;
+  background-color: var(--app-header-bkg);
 }
 
-.app-logo {
-  width: 80px;
+.app-header .nav a {
+  color: var(--app-header-text);
 }
 
-#app_logo {
-  width: 60px;
+.app-events .carousel {
+  background-color: var(--app-events-bkg);
+}
+
+.match-button .match-button-btn,
+.draw-button .draw-button-contain,
+.odds-button .odds-button-contain {
+  background: var(--odds-btn-border);
+  color: var(--odds-btn-text);
+}
+
+.match-button .match-button-btn .btn-contain,
+.draw-button .draw-button-contain .btn-contain,
+.odds-button .odds-button-contain .btn-contain {
+  background: var(--odds-btn-bkg);
+}
+
+.match-button .odds-over,
+.match-button .odds-locked,
+.match-button .odds-disabled,
+.odds-button .odds-over,
+.odds-button .odds-locked,
+.odds-button .odds-disabled {
+  background: var(--odds-btn-border-disabled);
+}
+
+.match-button .odds-over .btn-contain,
+.match-button .odds-locked .btn-contain,
+.match-button .odds-disabled .btn-contain,
+.odds-button .odds-over .btn-contain,
+.odds-button .odds-locked .btn-contain,
+.odds-button .odds-disabled .btn-contain {
+  background: var(--match-card-bkg);
+}
+
+
+.match-button .odds-selected,
+.draw-button .odds-selected,
+.odds-button .odds-selected {
+  background: var(--odds-btn-border-active);
+}
+
+.match-button .odds-selected .btn-contain,
+.draw-button .odds-selected .btn-contain,
+.odds-button .odds-selected .btn-contain {
+  color: var(--odds-btn-text-active);
+  background: var(--odds-btn-bkg-active);
+}
+
+.match-button .odds-selected .btn-contain .odds-status {
+  color: var(--odds-btn-text-active);
+}
+
+
+
+#app {
+  background-color: var(--main-bkg);
+}
+
+.live-icon {
+  fill: var(--live-icon);
+  stop-color: var(--live-icon-content);
+}
+
+.match-tab .v-tabs__bar {
+  background-color: var(--match-tab-bkg) !important;
+}
+
+
+.match-tab .type-name {
+  color: var(--match-tab-text);
+}
+
+.match-tab .type-count {
+  color: var(--match-tab-count);
+}
+
+.match-tab .tab-item-active .type-name,
+.match-tab .tab-item-active:hover .type-name {
+  color: var(--match-tab-text-active);
+}
+
+.match-tab .tab-item-active .type-count {
+  color: var(--match-tab-count-active);
+}
+
+
+.match-card,
+.tournament-card,
+.match-page .stage-list .group-list {
+  background-color: var(--match-card-bkg);
+}
+
+.match-card:hover,
+.tournament-card:hover {
+  background-color: var(--match-card-hover);
+}
+
+.match-card .match-info .tournament-name,
+.match-page .stage-list .group-list {
+  color: var(--match-card-text);
+}
+
+
+.match-card .match-center .match-score,
+.match-card .match-center .default-status {
+  color: var(--match-card-text);
+}
+
+.match-card .match-center .match-score .dash {
+  background-color: var(--match-card-text);
+}
+
+.match-card .match-info .best-of {
+  color: var(--match-card-best-of);
+}
+
+.match-card .play-count {
+  background-color: var(--match-card-count-bkg);
+  border-color: var(--match-card-count-border);
+  color: var(--match-card-count-text);
+}
+
+.game-filter {
+  background-color: var(--game-card-bkg);
+}
+
+.game-filter .game-item,
+.game-filter .game-item .border {
+  background-color: var(--game-card-bkg);
+}
+
+.game-filter .game-item .name,
+.game-filter .game-item .count {
+  color: var(--game-card-text);
+}
+
+.game-filter .game-item:hover,
+.game-filter .game-item:hover .border {
+  background-color: var(--game-card-active);
+  color: #fff;
+}
+
+.game-filter .game-item:hover .name,
+.game-filter .game-item:hover .count {
+  color: #fff;
+}
+
+.game-filter .game-item-active {
+  background-color: var(--game-card-active);
+}
+
+.game-filter .game-item-active .border,
+.game-filter .game-item-active:hover .border {
+  background-color: var(--game-card-active-bar);
+}
+
+.game-filter .game-item-active .name,
+.game-filter .game-item-active:hover .name {
+  color: var(--game-card-active-text);
+}
+
+.game-filter .game-item-active .count {
+  color: #fff;
+}
+
+.bet-info {
+  background-color: var(--bet-info-bkg);
+}
+
+.bet-info .tab-item {
+  color: var(--bet-info-tab-text);
+}
+
+.bet-info .tab-item-active .tab-item {
+  color: #fff;
+}
+
+.bet-info .v-tabs__bar,
+.bet-info .v-tabs__wrapper {
+  background-color: var(--bet-info-tab-bkg) !important;
+  border-bottom: none;
+}
+
+.v-tabs__slider {
+  background-color: var(--app-teb-bar) !important;
 }
