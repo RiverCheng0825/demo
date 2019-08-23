@@ -186,7 +186,10 @@ html {
 .match-button .odds-disabled,
 .odds-button .odds-over,
 .odds-button .odds-locked,
-.odds-button .odds-disabled {
+.odds-button .odds-disabled,
+.draw-button .odds-over,
+.draw-button .odds-locked,
+.draw-button .odds-disabled {
   background: var(--odds-btn-border-disabled);
 }
 
@@ -195,7 +198,10 @@ html {
 .match-button .odds-disabled .btn-contain,
 .odds-button .odds-over .btn-contain,
 .odds-button .odds-locked .btn-contain,
-.odds-button .odds-disabled .btn-contain {
+.odds-button .odds-disabled .btn-contain,
+.draw-button .odds-over .btn-contain,
+.draw-button .odds-locked .btn-contain,
+.draw-button .odds-disabled .btn-contain {
   background: var(--match-card-bkg);
 }
 
