@@ -268,11 +268,9 @@ html {
   background: var(--odds-btn-border-disabled);
 }
 
-.match-button .odds-over .btn-contain,
-.match-button .odds-locked .btn-contain,
+.match-button .odds-over .btn-contain,=
 .match-button .odds-disabled .btn-contain,
 .odds-button .odds-over .btn-contain,
-.odds-button .odds-locked .btn-contain,
 .odds-button .odds-disabled .btn-contain {
   background: var(--match-card-bkg);
 }
