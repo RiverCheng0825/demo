@@ -1,3 +1,4 @@
+/* 主要 Logo */
 .app-header .app-logo {
   width: 136px;
   background-image: url("");
@@ -5,22 +6,29 @@
 }
 
 :root {
+  /* 主要颜色 */
   --app-bkg: #000;
   --app-text: #b3b3b3;
   --app-header-bkg: #000;
   --app-header-text: #b3b3b3;
-  --app-events-bkg: #121212;
-  --app-events-text: #65d46e;
   --app-teb-bar: #65d46e;
+  --app-close-icon-hover: #65d46e;
 
   --main-bkg: #0b0b0b;
   --match-tab-bkg: #121212;
+  --empty-match-tip: #65d46e;
 
+  /* 首页公告 */
+  --events-carousel-bkg: #121212;
+  --events-carousel-text: #65d46e;
+
+  /* 赛事类别 */
   --match-tab-text: #b3b3b3;
   --match-tab-count: #515151;
   --match-tab-text-active: #fff;
   --match-tab-count-active: #65d46e;
 
+  /* 赛事卡 */
   --match-card-bkg: #181818;
   --match-card-hover: #262626;
   --match-card-text: #b3b3b3;
@@ -31,12 +39,14 @@
   --live-icon: #f22;
   --live-icon-content: #f22;
 
+  /* 遊戲篩選 */
   --game-card-bkg: #101010;
   --game-card-text: #b3b3b3;
   --game-card-active: #1a1a1a;
-  --game-card-active-text: #fff;
+  --game-card-active-text: #65d46e;
   --game-card-active-bar: #65d46e;
 
+  /* 盘口按钮 */
   --odds-btn-bkg: #202020;
   --odds-btn-text: #b3b3b3;
   --odds-btn-border: #0c4721;
@@ -45,28 +55,97 @@
   --odds-btn-text-active: #fff;
   --odds-btn-border-disabled: #202020;
 
+  /* 投注资讯 */
   --bet-info-bkg: #101010;
   --bet-info-tab-bkg: #262626;
-
   --bet-info-tab-text: #b3b3b3;
 
+  /* 投注单 */
   --bet-slip-confirm-border: #0c4721;
   --bet-slip-tip-text: #b3b3b3;
 
   --slip-card-bkg: #181818;
   --slip-card-text: #b3b3b3;
   --slip-card-alert: #dc0000;
-  --slip-card-odds-text: #65d46e;
+  --odds-text-color: #65d46e;
 
   --slip-input-bkg: #111111;
   --slip-input-caret: #65d46e;
   --slip-input-recommend-bkg: #111111;
 
+  --slip-confirm-bkg: #181818;
+  --slip-confirm-text: #65d46e;
+
+  /* 投注记录 */
+  --order-card-bkg: #181818;
+  --order-card-text: #b3b3b3;
+  --order-card-match-text: #515151;
+
+  /* 投注按钮 */
   --base-button-bkg: #57b660;
   --base-button-bkg-disabled: #181818;
   --base-button-text-disabled: #515151;
 
+  /* 赛事详情页面 */
+  --match-page-card-bkg: #181818;
+  --match-page-card-text: #b3b3b3;
+  --match-page-tab-bkg: #181818;
+  --match-page-stage-bkg: #121212;
+  --match-page-stage-text: #515151;
+
+  /* 赛事时间筛选 */
   --match-schedule-bkg: #121212;
+  --schedule-list-bkg: #101010;
+  --schedule-item-active: #1a1a1a;
+}
+
+.match-schedule .schedule-list .date-card-active {
+  background-color: var(--schedule-item-active);
+}
+
+.match-schedule .schedule-list {
+  background-color: var(--schedule-list-bkg);
+}
+
+.match-page .stage-list .stage-title {
+  background-color: var(--match-page-stage-bkg);
+  color: var(--match-page-stage-text);
+}
+
+.match-page .match-info {
+  background-color: var(--match-page-card-bkg);
+}
+
+.match-page .match-info .match-title,
+.match-page .match-info .match-status-content .result-status-date {
+  color: var(--match-page-card-text);
+}
+
+.tournament-page .outrights-header {
+  background-color: var(--slip-card-bkg);
+  color: var(--slip-card-text)
+}
+
+.match-page .v-tabs__bar {
+  background-color: var(--match-page-tab-bkg) !important;
+}
+
+.close-icon:hover {
+  fill: var(--app-close-icon-hover);
+}
+
+.order-card {
+  background-color: var(--order-card-bkg);
+  color: var(--order-card-text);
+}
+
+.order-card .odds-detail-list {
+  color: var(--order-card-match-text);
+}
+
+.bet-confirm .confirm-header {
+  background-color: var(--slip-confirm-bkg);
+  color: var(--slip-confirm-text);
 }
 
 .match-schedule .schedule-time,
@@ -109,10 +188,6 @@
 
 .bet-slip-card .disable-combo {
   border-color: var(--slip-card-alert);
-}
-
-.bet-slip-card .slip-card .card-header .odds {
-  color: var(--slip-card-odds-text);
 }
 
 .combo-card .combo-odds {
@@ -164,8 +239,13 @@ html {
   color: var(--app-header-text);
 }
 
-.app-events .carousel {
-  background-color: var(--app-events-bkg);
+.app-events .announcement-carousel {
+  background-color: var(--events-carousel-bkg);
+  color: var(--events-carousel-text);
+}
+
+.home-page .empty-match-tip {
+  color: var(--empty-match-tip);
 }
 
 .match-button .match-button-btn,
@@ -186,10 +266,7 @@ html {
 .match-button .odds-disabled,
 .odds-button .odds-over,
 .odds-button .odds-locked,
-.odds-button .odds-disabled,
-.draw-button .odds-over,
-.draw-button .odds-locked,
-.draw-button .odds-disabled {
+.odds-button .odds-disabled {
   background: var(--odds-btn-border-disabled);
 }
 
@@ -198,10 +275,7 @@ html {
 .match-button .odds-disabled .btn-contain,
 .odds-button .odds-over .btn-contain,
 .odds-button .odds-locked .btn-contain,
-.odds-button .odds-disabled .btn-contain,
-.draw-button .odds-over .btn-contain,
-.draw-button .odds-locked .btn-contain,
-.draw-button .odds-disabled .btn-contain {
+.odds-button .odds-disabled .btn-contain {
   background: var(--match-card-bkg);
 }
 
@@ -338,6 +412,14 @@ html {
 
 .bet-info {
   background-color: var(--bet-info-bkg);
+}
+
+.bet-slip .empty-slip .main-tip,
+.bet-slip .empty-slip .sub-tip,
+.bet-confirm .confirm-footer .confirm-tip,
+.user-name .name,
+.history-list .read-more {
+  color: var(--app-text);
 }
 
 .bet-info .tab-item {
