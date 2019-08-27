@@ -262,10 +262,8 @@ html {
 }
 
 .match-button .odds-over,
-.match-button .odds-locked,
 .match-button .odds-disabled,
 .odds-button .odds-over,
-.odds-button .odds-locked,
 .odds-button .odds-disabled {
   background: var(--odds-btn-border-disabled);
 }
