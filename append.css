@@ -26,7 +26,6 @@
 
 /* 标签 tab */
 .v-tabs__wrapper {
-  --tab-item-defult-color: #b3b3b3;
   --tab-item-active-color: #fff;
   --tab-bar-active-color: #fcee09;
 }
@@ -60,21 +59,25 @@
   --carousel-text-color: #fcee09;
 }
 
+
+
+
 :root {
+  --sub-text-color: blue;
   --odds-text-color: #fcee09;
+
+  /* 赛事卡 */
+  --match-card-bkg-color: #181818;
+  --match-card-bkg-hover-color: #262626;
 
   /* 主要颜色 */
   --app-bkg: #000;
-  --app-text: #b3b3b3;
+  /* --app-text: #b3b3b3; */
   --app-header-bkg: #000;
   --app-header-text: #b3b3b3;
-
   --main-bkg: #0b0b0b;
 
   /* 赛事卡 */
-  --match-card-bkg: #181818;
-  --match-card-hover: #262626;
-  --match-card-text: #b3b3b3;
   --match-card-best-of: #515151;
   --match-card-count-bkg: #202020;
   --match-card-count-text: #505050;
@@ -241,8 +244,8 @@
 
 
 html {
-  background-color: var(--app-bkg);
-  color: var(--app-text);
+  /* background-color: var(--app-bkg); */
+  color: var(--main-text-color);
 }
 
 .app-header {
@@ -253,30 +256,30 @@ html {
   color: var(--app-header-text);
 }
 
-.match-button .match-button-btn,
+/* .match-button .match-button-btn,
 .draw-button .draw-button-contain,
 .odds-button .odds-button-contain {
   background: var(--odds-btn-border);
   color: var(--odds-btn-text);
-}
+} */
 
-.match-button .match-button-btn .btn-contain,
+/* .match-button .match-button-btn .btn-contain,
 .draw-button .draw-button-contain .btn-contain,
 .odds-button .odds-button-contain .btn-contain {
   background: var(--odds-btn-bkg);
-}
+} */
 
-.match-button .odds-over,
+/* .match-button .odds-over,
 .draw-button .odds-over,
 .odds-button .odds-over {
   background: var(--odds-btn-border-disabled);
-}
+} */
 
-.match-button .odds-over .btn-contain,
+/* .match-button .odds-over .btn-contain,
 .draw-button .odds-over .btn-contain,
 .odds-button .odds-over .btn-contain {
   background: var(--match-card-bkg);
-}
+} */
 
 
 .match-button .odds-selected,
@@ -302,33 +305,6 @@ html {
   background-color: var(--main-bkg);
 }
 
-
-.match-card,
-.tournament-card,
-.match-page .stage-list .group-list {
-  background-color: var(--match-card-bkg);
-}
-
-.match-card:hover,
-.tournament-card:hover {
-  background-color: var(--match-card-hover);
-}
-
-.match-card .match-info .tournament-name,
-.match-page .stage-list .group-list {
-  color: var(--match-card-text);
-}
-
-
-.match-card .match-center .match-score,
-.match-card .match-center .default-status {
-  color: var(--match-card-text);
-}
-
-.match-card .match-center .match-score .dash {
-  background-color: var(--match-card-text);
-}
-
 .match-card .match-info .best-of {
   color: var(--match-card-best-of);
 }
@@ -343,10 +319,10 @@ html {
   background-color: var(--bet-info-bkg);
 }
 
-.bet-slip .empty-slip .main-tip,
+/* .bet-slip .empty-slip .main-tip,
 .bet-slip .empty-slip .sub-tip,
 .bet-confirm .confirm-footer .confirm-tip,
 .user-name .name,
 .history-list .read-more {
   color: var(--app-text);
-}
+} */
