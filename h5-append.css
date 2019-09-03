@@ -2,3 +2,8 @@
 .app-header {
   --app-logo: url("");
 }
+
+:root {
+  --header-bkg-color: #666;
+  --button-bkg-color: red;
+}
