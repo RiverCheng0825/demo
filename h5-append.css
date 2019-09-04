@@ -4,6 +4,53 @@
 }
 
 :root {
-  --header-bkg-color: #666;
-  --button-bkg-color: red;
+  --header-bkg-color: #090c15;
+  --button-bkg-color: #252f44;
+
+  /* 文字颜色 */
+  --main-text-color: #bacef1;
+  --sub-text-color: #758bb5;
+  --weak-text-color: #526585;
+  --odds-text-color: #1ee8e7;
+  --tip-text-color: #1ad2fe;
+
+  /* tab 颜色 */
+  --tab-bar-active-color: #1ee8e7;
+
+  /* 首页 公告、日期 (文字、icon) */
+  /* --home-carousel-text: #ff2; */
+}
+
+/*
+app-bkg: #0c121f
+header-bkg: #090C15
+pop-up: #232d42
+deep-bkg:#182032
+
+game-picker order-card: #151b29
+match-card: #1d2638
+order-tab-bkg: #141c2a (1)
+
+--odds-btn-bkg-default: #252f44
+--odds-btn-bkg-active: #0585a1
+--odds-btn-border-default: linear-gradient(#323e57, #1d2639);
+--odds-btn-border-active: linear-gradient(to right, #1efffa, #34cdff);
+--odds-btn-border-over: #27394c;
+--odds-btn-text-active: #fff;
+
+--bet-slip-header-bkg: #13757e
+*/
+
+
+.bet-btn {
+  background-image: linear-gradient(135deg, #21aab1 0%, #2e8eb4 100%);
+  box-shadow: 0 0 4px 0 rgba(14, 20, 34, 0.5),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.22);
+  border: 1px solid #22d8d9;
+  color: #fff;
+}
+
+.bet-btn .odds-change-btn {
+  background-image: linear-gradient(-135deg, #ff2222 0%, #cd0102 100%);
+  border-color: #ff6e6e;
 }
