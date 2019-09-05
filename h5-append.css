@@ -4,21 +4,33 @@
 }
 
 :root {
-  --header-bkg-color: #090c15;
-  --button-bkg-color: #252f44;
+  /* APP 顶部、投注单底部 */
+  --app-header-bkg: #000;
 
   /* 文字颜色 */
-  --main-text-color: #bacef1;
-  --sub-text-color: #758bb5;
-  --weak-text-color: #526585;
-  --odds-text-color: #1ee8e7;
-  --tip-text-color: #1ad2fe;
+  --main-text-color: #aaa;
+  --sub-text-color: #666;
+  --weak-text-color: #505050;
+  --odds-text-color: #fcee09;
+  --tip-text-color: yellow;
+
 
   /* tab 颜色 */
-  --tab-bar-active-color: #1ee8e7;
+  --tab-bar-active-color: #ff2;
 
   /* 首页 公告、日期 (文字、icon) */
-  /* --home-carousel-text: #ff2; */
+  --home-carousel-text: #ff2;
+
+  /* 按钮样式 */
+  --odds-btn-bkg-default: #272727;
+  --odds-btn-bkg-active: #383400;
+  --odds-btn-border-default: #7b7300;
+  --odds-btn-border-active: #fcee09;
+  --odds-btn-border-over: rgba(71, 71, 71, 0.5);
+
+  /* 赛事卡 */
+  --match-card-bkg: #1c1c1c;
+  --match-card-border: #333;
 }
 
 /*
@@ -28,15 +40,7 @@ pop-up: #232d42
 deep-bkg:#182032
 
 game-picker order-card: #151b29
-match-card: #1d2638
 order-tab-bkg: #141c2a (1)
-
---odds-btn-bkg-default: #252f44
---odds-btn-bkg-active: #0585a1
---odds-btn-border-default: linear-gradient(#323e57, #1d2639);
---odds-btn-border-active: linear-gradient(to right, #1efffa, #34cdff);
---odds-btn-border-over: #27394c;
---odds-btn-text-active: #fff;
 
 --bet-slip-header-bkg: #13757e
 */
