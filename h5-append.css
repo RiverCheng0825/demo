@@ -1,6 +1,7 @@
 /* 首页 Logo */
 .app-header {
-  --app-logo: url("");
+  /* --app-logo: url(""); */
+  --back-icon: hidden;
 }
 
 :root {
@@ -25,9 +26,11 @@
 
   /* tab 颜色 */
   --tab-bar-active-color: #ff2;
+  --tab-bar-border-color: #2d2d2d;
 
   /* 首页 公告、日期 (文字、icon) */
   --home-carousel-text: #ebc612;
+  --home-carousel-border: #2d2d2d;
 
   /* 按钮样式 */
   --odds-btn-bkg-default: #272727;
