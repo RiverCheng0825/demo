@@ -1,0 +1,83 @@
+:root {
+  --app-bkg: #04070a;
+  --sub-bkg: #0c1016;
+  --app-text: #93a0c4;
+
+  --highlight-text: #eceef8;
+  --main-text: #707ea1;
+  --sub-text: #afb8d6;
+  --weak-text: #526181;
+
+  --main-card-bkg: #131822;
+  --main-card-border: #1e2430;
+
+  /* (tab bar color, odds text) */
+  --main-active-color: #ffe600;
+
+  /* [home-page] tabs */
+  --open-game-filter-icon: #06e66e;
+  --game-filter-check-icon: #00a4c0;
+
+  /* [home-page] match card */
+  --live-icon-text: #00FFFC;
+  --live-icon-border: #1AA3A4;
+  --pre-live-icon-text: #707ea1;
+  --pre-live-icon-border: #526181;
+
+  /* [odds-button] */
+  --odds-btn-border: #00647e;
+  --odds-btn-bkg: #191f2a;
+  --odds-btn-selected-bkg: #0e3240;
+  --odds-btn-stopped-bkg: #171d28;
+  --odds-btn-up: #ff0a0a;
+  --odds-btn-down: #00dc14;
+  --odds-btn-lock: #707ea1;
+
+  /* [bet-slip] */
+  --bet-slip-count-bkg: #0088a8;
+  --bet-slip-balance-text: #00dad8;
+  --bet-slip-input-caret: #00fffc;
+  --bet-slip-input-border: #3d455b;
+  --bet-button-bkg: #00a4c0;
+  --bet-button-active-bkg: #00849c;
+  --bet-button-text: #eceef8;
+
+  /* [bet-slip] tips */
+  --slip-odds-change-tips-text: #42f7ff;
+  --slip-odds-change-tips-bkg: rgba(0, 55, 69, 0.9);
+  --slip-disable-parlay-card-bkg: #20161c;
+  --slip-disable-parlay-bar: #cf2c27;
+  --slip-disable-parlay-tips-text: #ff4f4a;
+  --slip-disable-parlay-tips-bkg: rgba(52, 27, 34, 0.9);
+
+  /* [bet-slip] keyboard */
+  --keyboard-btn-bkg: #3c465a;
+  --keyboard-btn--active-bkg: #545c70;
+  --keyboard-btn-text: #dadef0;
+  --keyboard-btn-over-bkg: #8d1410;
+  --keyboard-btn-over-active-bkg: #740f0c;
+
+  /* [bet-history-page] order card */
+  --order-win-mark: #ff0a0a;
+  --order-lose-mark: #93a0c4;
+
+  /* match scoreboard */
+  --scoreboard-base-icon: #0081a8;
+  --scoreboard-economic-lead: #ffca00;
+  --scoreboard-first-blood-icon: #cf2c27;
+  --scoreboard-kill-icon: #e0ba64;
+
+  --dota-radiant: #00a4c0;
+  --dota-dire: #cf2c27;
+
+  --lol-blue: #00a4c0;
+  --lol-red: #cf2c27;
+
+  --csgo-terrorist: #e0ba64;
+  --csgo-ct: #00a4c0;
+  --csgo-table-bkg: rgba(4, 7, 10, 0.6);
+  --csgo-table-header: rgba(21, 26, 36, 0.5);
+  --csgo-table-border: rgb(30, 36, 48);
+
+  --download-tips-height: 0px;
+}
